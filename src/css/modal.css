@@ -1,4 +1,5 @@
-/* region Modal Price Mobile */
+/* #region Modal Price Mobile */
+
 .modal-price {
   display: flex;
   position: fixed;
@@ -10,6 +11,17 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.25);
   z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  visibility: hidden;
+}
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 .modal-container {
   position: relative;
@@ -39,6 +51,7 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  margin-bottom: 32px;
 }
 .modal-text-content {
   font-family: 'Cabin', sans-serif;
@@ -48,6 +61,7 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  margin-bottom: 8px;
 }
 .modal-text-price {
   font-family: 'Cabin', sans-serif;
@@ -57,6 +71,7 @@
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
+  margin-bottom: 32px;
 }
 .modal-form {
   display: flex;
@@ -83,6 +98,13 @@
   height: 42px;
   background-color: rgba(13, 11, 10, 0.05);
 }
+.modal-input::placeholder {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(13, 11, 10, 0.6);
+}
 .wrapper-contacts {
   display: flex;
   flex-direction: column;
@@ -95,11 +117,72 @@
   width: 343px;
   height: 46px;
   background-color: #c2d9fc;
+
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  transition:
+    opacity 250ms ease-in-out,
+    background-color 250ms ease-in-out,
+    border-color 250ms ease-in-out;
 }
-/* endregion Modal Price Mobile */
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  opacity: 0.5;
+}
+.modal-form-btn:active {
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid #868584;
+}
+/* #endregion Modal Price Mobile */
 
-/* region Modal Price Tablet */
-/* endregion Modal Price Tablet */
+/* #region Modal Price Tablet */
+@media screen and (min-width: 768px) {
+  .modal-container {
+    border-radius: 16px;
+    padding: 64px 92px;
+    width: 704px;
+    height: 573px;
+  }
+  .modal-text-title {
+    margin-bottom: 24px;
+  }
+  .modal-text-price {
+    margin-bottom: 24px;
+  }
+  .modal-input {
+    min-width: 248px;
+    max-width: 520px;
+  }
+  .wrapper-contacts {
+    flex-direction: row;
+    gap: 24px;
+  }
+  .modal-form-btn {
+    margin: 0 auto;
+    width: 155px;
+  }
+}
+/* #endregion Modal Price Tablet */
 
-/* region Modal Price Desktop */
-/* endregion Modal Price Desktop */
+/* #region Modal Price Desktop */
+@media screen and (min-width: 1366px) {
+  .modal-container {
+    padding: 64px;
+    width: 768px;
+  }
+  .modal-input {
+    min-width: 308px;
+    max-width: 640px;
+  }
+}
+/* #endregion Modal Price Desktop */
+
+/* #region Mobile Menu Mobile */
+/* #endregion Mobile Menu Mobile */
+
+/* #region Mobile Menu Tablet */
+/* #endregion Mobile Menu Tablet */
