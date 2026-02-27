@@ -9,8 +9,16 @@ a {
     color: inherit;
 }
 button {
-    cursor: pointer;
     border: none;
-    background-color: transparent;
-    padding: 0;
+    background-color: #c2d9fc;
+    box-shadow: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
