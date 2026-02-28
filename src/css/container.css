@@ -6,16 +6,18 @@
 }
 @media (min-width: 375px) {
     .container {
-        width: 375px;
+        max-width: 375px;
     }
 }
 @media (min-width: 768px) {
     .container {
-        width: 768px;
+        max-width: 768px;
+        padding: 0 32px;
     }
 }
 @media (min-width: 1336px) {
     .container {
-        width: 1336px;
+        max-width: 1336px;
+        padding: 0 64px;
     }
 }
