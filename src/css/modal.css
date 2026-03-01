@@ -45,9 +45,7 @@
 }
 .modal-text-title {
   font-family: 'Cabin', sans-serif;
-  font-weight: 400;
   font-size: 40px;
-  line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
@@ -55,7 +53,6 @@
 }
 .modal-text-content {
   font-family: 'Cabin', sans-serif;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.01em;
@@ -65,9 +62,7 @@
 }
 .modal-text-price {
   font-family: 'Cabin', sans-serif;
-  font-weight: 400;
   font-size: 44px;
-  line-height: 1.2;
   letter-spacing: 0.01em;
   text-align: center;
   color: #0d0b0a;
@@ -84,8 +79,6 @@
   gap: 8px;
 }
 .modal-label {
-  font-family: 'Sarabun', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   color: #0d0b0a;
@@ -100,7 +93,6 @@
 }
 .modal-input::placeholder {
   font-family: 'Sarabun', sans-serif;
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
   color: rgba(13, 11, 10, 0.6);
@@ -117,8 +109,6 @@
   width: 343px;
   height: 46px;
   background-color: #c2d9fc;
-
-  font-family: 'Sarabun', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
