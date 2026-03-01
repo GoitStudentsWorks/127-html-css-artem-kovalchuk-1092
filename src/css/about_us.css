@@ -1,7 +1,6 @@
 /* region about_us Mobile  */
 .about-us {
     background: #dfebeb;
-    padding: 64px 16px;
 }
 
 .about-us-title {
@@ -77,9 +76,9 @@ p.about-us-text-list {
     font-size: 16px;
     line-height: 1.6;
     background: #c2d9fc;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms easy-in-out,
+        background-color 250ms easy-in-out,
+        opacity 250ms easy-in-out;
 }
 
 .button-about-us {
@@ -98,7 +97,7 @@ p.about-us-text-list {
 /* endregion about_us Mobile  */
 
 /* region about_us Tablet  */
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .about-us {
         background: none;
         padding: 40px 32px;
@@ -144,7 +143,7 @@ p.about-us-text-list {
 /* endregion about_us Tablet  */
 
 /* region about_us Desktop  */
-@media only screen and (min-width: 1336px) {
+@media screen and (min-width: 1336px) {
     .about-us {
         padding: 112px 64px;
     }
