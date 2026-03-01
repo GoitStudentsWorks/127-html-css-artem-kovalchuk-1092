@@ -1,12 +1,87 @@
 /* region hero Mobile  */
-/* endregion hero Mobile  */
+.hero {
+    padding-bottom: 48px;
+}
+.hero-picture {
+    display: block;
+    width: 100%;
+}
+.hero-img {
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    object-fit: cover;
+    aspect-ratio: 375 / 301;
+    margin: 0 auto 48px auto;
+}
+.hero-title {
+    font-family: "Cabin", sans-serif;
+    font-size: 44px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    margin-bottom: 20px;
+}
+.hero-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+
+}
+.hero-btn-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.join {
+    background: #c2d9fc;
+    border: 1px solid #c2d9fc;
+}
+.learn {
+    background: rgba(13, 11, 10, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
 
 /* region hero Tablet  */
 @media screen and (min-width: 768px) {
+    .hero {
+        padding-bottom: 24px;
+    }
+    .hero-img {
+        max-width: 768px;
+        aspect-ratio: 768 / 359;
+        margin-bottom: 24px;
+    }
+    .hero-title {
+        margin-bottom: 8px;
+    }
+    .hero-description {
+        font-size: 18px;
+    }
 }
 /* endregion hero Tablet  */
 
 /* region hero Desktop  */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1336px) {
+    .hero-img {
+        max-width: 1440px;
+        aspect-ratio: 1440 / 684;
+        margin-bottom: 80px;
+    }
 }
 /* endregion hero Desktop  */
