@@ -14,15 +14,11 @@ h1, h2, h3, h4, h5,h6, p {
 
 /* region team Mobile  */
 /* endregion teamMobile  */
-.container {
-    max-width: 343px;
-    margin: 0 auto;
-    padding: 0 16px;
-}
+
 .team-section {
     padding: 64px 0;
     max-width: 100%;
-    height: 2996px;
+    height: 100%;
     background-color: #F2FAFA;
     text-align: center;
     margin: 0 auto;
@@ -107,9 +103,7 @@ h1, h2, h3, h4, h5,h6, p {
 }
 /* region team Tablet  */
 @media screen and (min-width: 768px) {
-    .container {
-        padding: 0 32px;
-    }
+   
     .team-section {
         max-width: 768px;
         height: 100%;
@@ -159,9 +153,7 @@ h1, h2, h3, h4, h5,h6, p {
 /* region team Desktop  */
 @media screen and (min-width: 1336px) {
     
-    .container {
-        padding: 0 64px;
-    }
+   
     .team-section {
         max-width: 100%;
         height: 100%;
