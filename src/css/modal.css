@@ -93,6 +93,11 @@
   height: 42px;
   background-color: rgba(13, 11, 10, 0.05);
 }
+.modal-input:hover,
+.modal-input:focus {
+  outline: none;
+  box-shadow: none;
+}
 .modal-input::placeholder {
   font-family: 'Sarabun', sans-serif;
   font-size: 16px;
@@ -122,9 +127,11 @@
 }
 .modal-form-btn:hover,
 .modal-form-btn:focus {
+  outline: none;
   opacity: 0.5;
 }
 .modal-form-btn:active {
+  outline: none;
   background-color: transparent;
   opacity: 1;
   border: 1px solid #868584;
@@ -161,7 +168,7 @@
 /* #endregion Modal Price Tablet */
 
 /* #region Modal Price Desktop */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1336px) {
   .modal-container {
     padding: 64px;
     width: 768px;
