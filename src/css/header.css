@@ -73,6 +73,13 @@
   color: #0d0b0a;
 }
 
+.yb-join:hover,
+.yb-join:focus {
+  background-color: #c2d9fc;
+  opacity: 0.5;
+  outline: none;
+}
+
 /* endregion header Mobile  */
 
 /* region header Tablet  */
