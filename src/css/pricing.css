@@ -50,7 +50,6 @@
 }
 
 .price-session {
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.01em;
@@ -58,7 +57,6 @@
 
 .price-money {
   margin-top: 8px;
-  font-weight: 400;
   font-size: 44px;
   line-height: 1.2;
   letter-spacing: 0.01em;
