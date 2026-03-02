@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5,h6, p {
 
 /* region team Mobile  */
 /* endregion teamMobile  */
-.conteiner {
+.container {
     max-width: 343px;
     margin: 0 auto;
     padding: 0 16px;
@@ -101,17 +101,13 @@ h1, h2, h3, h4, h5,h6, p {
     gap: 14px;
     justify-content: center;
 }
-.team-member-social { 
-    width: 24px;
-    height: 24px;
-}
 .team-social-list {
     display: flex;
     justify-content: center;
 }
 /* region team Tablet  */
 @media screen and (min-width: 768px) {
-    .conteiner {
+    .container {
         padding: 0 32px;
     }
     .team-section {
@@ -163,7 +159,7 @@ h1, h2, h3, h4, h5,h6, p {
 /* region team Desktop  */
 @media screen and (min-width: 1336px) {
     
-    .conteiner {
+    .container {
         padding: 0 64px;
     }
     .team-section {
