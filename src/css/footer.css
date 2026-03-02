@@ -84,6 +84,10 @@
   background-color: rgba(13, 11, 10, 0.05);
   margin-bottom: 12px;
 
+  transition:
+    opacity 250ms ease-in-out,
+    background-color 250ms ease-in-out;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -93,6 +97,12 @@
 .footer-button:hover,
 .footer-button:focus {
   background-color: #c2d9fc;
+  opacity: 0.5;
+}
+
+.footer-button:active {
+  background-color: transparent;
+  opacity: 1;
 }
 
 .subscrib {
@@ -127,6 +137,16 @@
   color: #0d0b0a;
 }
 
+.links-item:hover,
+.links-item:focus {
+  opacity: 0.5;
+}
+
+.links-item:active {
+  background-color: transparent;
+  opacity: 1;
+}
+
 .footer-social {
   width: 100%;
   padding: 8px 0;
@@ -134,6 +154,16 @@
 
 .footer-social-icon {
   fill: #0d0b0a;
+}
+
+.footer-social:hover,
+.footer-social:focus {
+  opacity: 0.5;
+}
+
+.footer-social:active {
+  background-color: transparent;
+  opacity: 1;
 }
 
 .social-item {
@@ -146,6 +176,10 @@
   color: #0d0b0a;
 }
 
+.social-item:active {
+  background-color: transparent;
+  opacity: 1;
+}
 .footer-copyright {
   font-weight: 400;
   font-size: 14px;
