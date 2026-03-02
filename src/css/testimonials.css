@@ -99,6 +99,9 @@
 .client__photo {
   border-radius: 50%;
   margin-bottom: 16px;
+  transition:
+    transform 250ms ease-in-out,
+    box-shadow 250ms ease-in-out;
 }
 
 .client__name {
@@ -106,9 +109,13 @@
   font-size: 18px;
 }
 
+.testimonials__item:hover .client__photo {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
 .client__position {
   font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
 }
 
