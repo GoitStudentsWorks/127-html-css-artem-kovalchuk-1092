@@ -14,8 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 15px 16px;
+
+  margin: 0 auto;
+  max-width: 375px;
 }
 
 .burger-menu {
@@ -82,8 +84,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     padding: 24px 32px;
+
+    max-width: 768px;
   }
 
   .yb-join {
@@ -96,7 +99,7 @@
 /* endregion header Tablet  */
 
 /* region header Desktop  */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1336px) {
   .burger-menu {
     display: none;
   }
@@ -107,8 +110,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     position: relative;
+
+    max-width: 1336px;
   }
 
   .header-nav {
