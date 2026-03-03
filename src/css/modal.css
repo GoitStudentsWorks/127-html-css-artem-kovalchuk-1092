@@ -104,6 +104,10 @@
   line-height: 1.6;
   color: rgba(13, 11, 10, 0.6);
 }
+.modal-input:invalid:not(:placeholder-shown) {
+  border: 1px solid #b10000;
+  color: #b10000;
+}
 .wrapper-contacts {
   display: flex;
   flex-direction: column;
