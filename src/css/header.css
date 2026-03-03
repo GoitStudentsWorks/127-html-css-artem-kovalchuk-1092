@@ -7,6 +7,7 @@
 .main-header {
   background: #f2fafa;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  width: 100%;
 }
 
 .container-header {
@@ -16,6 +17,7 @@
   justify-content: space-between;
   padding: 15px 16px;
 
+  width: 100%;
   margin: 0 auto;
   max-width: 375px;
 }
@@ -105,14 +107,14 @@
   }
 
   .container-header {
-    width: 100%;
     padding: 15px 64px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
 
-    max-width: 1336px;
+    width: 100%;
+    max-width: none;
   }
 
   .header-nav {
