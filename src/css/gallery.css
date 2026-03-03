@@ -109,7 +109,7 @@
 /* endregion gallery Tablet  */
 
 /* region gallery Desktop  */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1336px) {
   .gallery {
     background-color: #f2fafa;
     padding-top: 112px;
