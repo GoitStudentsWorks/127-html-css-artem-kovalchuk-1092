@@ -92,6 +92,9 @@
   max-width: 343px;
   height: 42px;
   background-color: rgba(13, 11, 10, 0.05);
+  transition:
+    color 250ms ease-in-out,
+    border-color 250ms ease-in-out;
 }
 .modal-input:hover,
 .modal-input:focus {
