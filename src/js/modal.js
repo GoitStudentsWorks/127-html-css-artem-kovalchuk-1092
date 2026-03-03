@@ -21,4 +21,14 @@ document.addEventListener('click', e => {
     modal.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
   }
+  const mobileMenuLinks = e.target.closest(
+    '.mobile-navigation-link, .mobile-link-btn'
+  );
+  if (mobileMenuLinks) {
+    const mobileMenu = document.querySelector('[data-modal-menu]');
+    if (mobileMenu) {
+      mobileMenu.classList.remove('is-open');
+      document.body.classList.remove('no-scroll');
+    }
+  }
 });
