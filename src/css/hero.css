@@ -1,0 +1,121 @@
+.hero-section {
+  padding-bottom: 48px;
+}
+.hero-picture {
+}
+.hero-img {
+  margin: 0 auto 48px auto;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+.hero-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+.hero-description {
+  color: #0d0b0a;
+  margin-bottom: 24px;
+}
+.hero-btn-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.hero-btn-join {
+  font-weight: 500;
+
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  padding: 10px 24px;
+  max-width: 343px;
+  height: 46px;
+  background-color: #c2d9fc;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.hero-btn-learn {
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 100px;
+  padding: 10px 24px;
+  max-width: 343px;
+  height: 46px;
+  background-color: rgba(13, 11, 10, 0.05);
+  text-align: center;
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-bottom: 24px;
+  }
+  .hero-img {
+    margin: 0 auto 24px auto;
+  }
+
+  .hero-title {
+    margin-bottom: 8px;
+    width: 423px;
+  }
+  .hero-description {
+    font-size: 18px;
+    width: 641px;
+  }
+  .hero-btn-block {
+    flex-direction: row;
+    margin-right: 16px;
+  }
+  .hero-btn-join {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .hero-btn-learn {
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1336px) {
+  .hero-section {
+    padding-bottom: 80px;
+  }
+  .hero-img {
+    margin: 0 auto 80px auto;
+  }
+  .hero-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .hero-title {
+    font-size: 72px;
+    margin-bottom: 0;
+    max-width: 644px;
+    height: 258px;
+    margin-right: 24px;
+  }
+  .hero-description {
+    font-size: 18px;
+    max-width: 641px;
+  }
+  .hero-btn-block {
+    flex-direction: row;
+    gap: 16px;
+  }
+  .hero-btn-join {
+  }
+  .hero-btn-learn {
+  }
+}
