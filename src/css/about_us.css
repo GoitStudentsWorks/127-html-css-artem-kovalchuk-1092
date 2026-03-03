@@ -76,10 +76,12 @@ p.about-us-text-list {
     font-size: 16px;
     line-height: 1.6;
     background: #c2d9fc;
-    transition: color 250ms easy-in-out,
-        background-color 250ms easy-in-out,
-        opacity 250ms easy-in-out;
-}
+    transition: color 250ms ease-in-out, 
+    border-color 250ms ease-in-out, 
+    background-color 250ms ease-in-out, 
+    opacity 250ms ease-in-out;
+    }
+
 
 .button-about-us {
     display: flex;
@@ -92,6 +94,12 @@ p.about-us-text-list {
     color: #0d0b0a;
     background-color: #c2d9fc;
     opacity: 0.5;
+}
+.button-link-about-us:active {
+    outline: none;
+    background-color: transparent;
+    opacity: 1;
+    border: 1px solid #868584;
 }
 
 /* endregion about_us Mobile  */
