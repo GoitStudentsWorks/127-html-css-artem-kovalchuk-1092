@@ -157,7 +157,8 @@
     transition: box-shadow 250ms ease-in-out;
   }
   .team-list-item:hover,
-  .team-list-item:focus {
+  .team-list-item:focus,
+  .team-list-item:active {
     box-shadow: 0 8px 24px rgba(13, 11, 10, 0.1);
   }
   .team-img {
@@ -167,6 +168,17 @@
   .team-member-list {
     width: 421px;
     height: 204px;
+  }
+  .team-member-social {
+    transition: color 250ms ease-in-out;
+  }
+  .team-member-social:hover,
+  .team-member-social:focus {
+    color: #0d0b0a;
+    transform: scale(1.1);
+  }
+  .team-member-social:active {
+    transform: scale(0.95);
   }
 }
 /* endregion team Desktop  */
