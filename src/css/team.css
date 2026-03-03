@@ -53,6 +53,7 @@ h1, h2, h3, h4, h5,h6, p {
   flex-direction: column;
   gap: 48px;
 }
+
 .team-list-item {
   display: flex;
   flex-direction: column;
@@ -162,10 +163,16 @@ h1, h2, h3, h4, h5,h6, p {
     } 
     .team-list {
         gap: 64px 24px;
+        
     }
         .team-list-item {
-      flex-basis: calc((100% - 48px) / 3);  
-    }
+      flex-basis: calc((100% - 48px) / 3);
+      transition: box-shadow 250ms ease-in-out;  
+    } 
+    .team-list-item:hover,
+    .team-list-item:focus {
+        box-shadow: 0 8px 24px rgba(13, 11, 10, 0.1);
+}   
         .team-img {
             width: 421px;
             height: 395px;
