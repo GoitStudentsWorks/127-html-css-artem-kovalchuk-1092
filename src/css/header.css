@@ -11,15 +11,16 @@
 }
 
 .container-header {
+  width: 100%;
+  min-width: 320px;
+  max-width: 375px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 15px 16px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 16px;
-
-  width: 100%;
-  margin: 0 auto;
-  max-width: 375px;
 }
 
 .burger-menu {
@@ -77,11 +78,19 @@
   color: #0d0b0a;
 }
 
+.yb-join:hover,
+.yb-join:focus {
+  background-color: #c2d9fc;
+  opacity: 0.5;
+  outline: none;
+}
+
 /* endregion header Mobile  */
 
 /* region header Tablet  */
 @media screen and (min-width: 768px) {
   .container-header {
+    max-width: 768px;
     position: relative;
     display: flex;
     align-items: center;
@@ -107,58 +116,77 @@
   }
 
   .container-header {
-    padding: 15px 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-
     width: 100%;
     max-width: none;
+    margin: 0 auto;
+    padding: 15px 64px;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
   }
 
   .header-nav {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    flex-direction: row;
-    gap: 0px;
-    margin-left: 64px;
   }
 
   .header-list {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 32px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .yb-brand {
+    position: static;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .header-link {
+    display: inline-block;
+    position: relative;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.6;
     text-decoration: none;
     color: #2c2c2c;
-    position: relative;
   }
+
   .header-link::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -4px;
     width: 0;
     height: 2px;
-    background: #0d0b0a80;
-    transition: width 0.3s ease;
+    background-color: rgba(13, 11, 10, 0.5);
+    transition:
+      color 0.25s ease-in-out,
+      background-color 0.25s ease-in-out,
+      opacity 0.25s ease-in-out;
   }
 
-  .header-link:hover::after {
+  .header-link:hover::after,
+  .header-link:focus::after {
     width: 100%;
   }
-  .yb-brand {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+
+  .yb-join {
+    justify-self: end;
+    align-self: center;
+    width: fit-content;
+    height: auto;
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* endregion header Desktop  */
