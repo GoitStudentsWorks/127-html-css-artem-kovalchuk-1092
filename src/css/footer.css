@@ -250,7 +250,7 @@ html {
 /* endregion footer Tablet  */
 
 /* region footer Desktop  */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1336px) {
   .main-footer {
     padding: 64px;
   }
