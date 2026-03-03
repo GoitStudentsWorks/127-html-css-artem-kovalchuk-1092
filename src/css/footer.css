@@ -1,4 +1,8 @@
 /* region footer Mobile  */
+html {
+  scroll-behavior: smooth;
+}
+
 .main-footer {
   padding: 48px 16px;
   background-color: #dfebeb;
@@ -96,16 +100,17 @@
 
 .footer-button:hover,
 .footer-button:focus {
-  background-color: #c2d9fc;
+  outline: none;
   opacity: 0.5;
 }
 
 .footer-button:active {
+  border: 1px solid #868584;
   background-color: transparent;
   opacity: 1;
 }
 
-.subscrib {
+.subscribe {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.6;
@@ -276,7 +281,7 @@
     margin-bottom: 12px;
   }
 
-  .subscrib {
+  .subscribe {
     margin-bottom: 24px;
   }
 
