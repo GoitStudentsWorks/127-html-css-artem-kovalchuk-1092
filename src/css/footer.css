@@ -50,6 +50,10 @@ html {
   line-height: 1.6;
   color: rgba(13, 11, 10, 0.6);
   background-color: rgba(13, 11, 10, 0.05);
+
+  transition:
+    opacity 250ms ease-in-out,
+    background-color 250ms ease-in-out;
 }
 
 .newsletter-input:invalid:not(:placeholder-shown) {
@@ -159,6 +163,9 @@ html {
 
 .footer-social-icon {
   fill: #0d0b0a;
+  transition:
+    opacity 250ms ease-in-out,
+    background-color 250ms ease-in-out;
 }
 
 .footer-social:hover,
