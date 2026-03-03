@@ -239,7 +239,7 @@
   border: 1px solid #c2d9fc;
   border-radius: 100px;
   padding: 4px 20px;
-  width: 105px;
+
   height: 34px;
   background-color: #c2d9fc;
   font-family: 'Sarabun', sans-serif;
@@ -325,6 +325,10 @@
   .mobile-menu-logo {
     margin-right: 0;
   }
+  .mobile-header-link-btn {
+    height: 48px;
+    padding: 8px 20px;
+  }
   .mobile-navigation-container {
     padding: 16px 32px 160px;
   }
@@ -333,3 +337,11 @@
   }
 }
 /* #endregion Mobile Menu Tablet */
+
+/* #region Mobile Menu Desktop */
+@media screen and (min-width: 1336px) {
+  .mobile-menu {
+    display: none !important;
+  }
+}
+/* #endregion Mobile Menu Desktop */
