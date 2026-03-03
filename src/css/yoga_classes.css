@@ -114,7 +114,7 @@
 /* endregion yoga_classes Tablet  */
 
 /* region yoga_classes Desktop  */
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1336px) {
   .yoga-title {
     font-size: 52px;
     width: 768px;
