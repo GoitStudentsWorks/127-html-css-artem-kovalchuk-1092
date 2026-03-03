@@ -84,6 +84,12 @@
   opacity: 0.5;
   outline: none;
 }
+.yb-join:active {
+  outline: none;
+  background-color: transparent;
+  opacity: 1;
+  border: 1px solid #868584;
+}
 
 /* endregion header Mobile  */
 
@@ -116,8 +122,8 @@
   }
 
   .container-header {
+    max-width: 1336px;
     width: 100%;
-    max-width: none;
     margin: 0 auto;
     padding: 15px 64px;
     box-sizing: border-box;
