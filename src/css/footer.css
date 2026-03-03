@@ -144,6 +144,9 @@ html {
   font-size: 14px;
   line-height: 1.6;
   color: #0d0b0a;
+  transition:
+    opacity 250ms ease-in-out,
+    background-color 250ms ease-in-out;
 }
 
 .links-item:hover,
@@ -159,10 +162,6 @@ html {
 .footer-social {
   width: 100%;
   padding: 8px 0;
-}
-
-.footer-social-icon {
-  fill: #0d0b0a;
   transition:
     opacity 250ms ease-in-out,
     background-color 250ms ease-in-out;
@@ -174,6 +173,17 @@ html {
 }
 
 .footer-social:active {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.footer-social-icon {
+  fill: #0d0b0a;
+}
+
+.footer-social-icon:active {
+  border: 1px solid #868584;
+  border-radius: 100px;
   background-color: transparent;
   opacity: 1;
 }
