@@ -171,20 +171,17 @@
     height: 204px;
   }
   .team-member-social {
-    transition: color 250ms ease-in-out,
+    transition: transform 250ms ease-in-out,
     opacity 250ms ease-in-out;
   }
   .team-member-social:hover,
   .team-member-social:focus {
     opacity: 0.5;
-    color: #0d0b0a;
     transform: scale(1.1);
-    border-radius: 16px;
   }
   .team-member-social:active {
     transform: scale(0.95);
     opacity: 0.5;
-    border-radius: 16px;
   }
 }
 /* endregion team Desktop  */
