@@ -117,6 +117,9 @@
   .header-link {
     position: relative;
   }
+  .header-link:hover {
+    opacity: 0.5;
+  }
   .header-link::after {
     content: '';
     position: absolute;
