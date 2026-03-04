@@ -44,10 +44,6 @@ p.text-title-about-us {
     color: #0d0b0a;
 }
 
-p.about-us-text-list {
-    margin-bottom: 48px;
-}
-
 .about-us-button {
     font-weight: 500;
     font-size: 16px;
@@ -60,6 +56,7 @@ p.about-us-text-list {
     flex-direction: column;
     gap: 20px;
     padding: 0;
+    margin-bottom: 48px;
 }
 
 .button-link-about-us {
@@ -101,13 +98,17 @@ p.about-us-text-list {
     border: 1px solid #868584;
 }
 
+.about-us-item:not(:last-child) {
+    margin-bottom: 48px;
+}
+
 /* endregion about_us Mobile  */
 
 /* region about_us Tablet  */
 @media screen and (min-width: 768px) {
     .about-us {
         background: none;
-        padding: 40px 32px;
+        padding: 40px 0;
     }
 
     .text-title-about-us {
@@ -128,6 +129,7 @@ p.about-us-text-list {
 
     .about-us-item {
         width: calc((100% - 24px) / 2);
+        margin-bottom: 0;
     }
 
     .about-us-list .about-us-item {
@@ -152,7 +154,7 @@ p.about-us-text-list {
 /* region about_us Desktop  */
 @media screen and (min-width: 1336px) {
     .about-us {
-        padding: 112px 64px;
+        padding: 112px 0;
     }
 
     .about-us-title {
@@ -176,10 +178,8 @@ p.about-us-text-list {
         justify-content: flex-start;
         flex-direction: column;
         gap: 24px;
+        margin-bottom: 0;
     }
 
-    .about-us-item:not(:last-child) {
-        padding: 0 24px 0 0;
-    }
 }
 /* endregion about_us Desktop  */
