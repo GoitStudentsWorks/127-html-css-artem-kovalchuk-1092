@@ -27,34 +27,56 @@
     line-height: 1.6;
 }
 
-.hero-btn-block {
+.hero-btn-list {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
+.hero-btn-list li {
+    width: 100%;
+}
 
 .hero-btn-join {
+    display: block;
     border: 1px solid #c2d9fc;
     background-color: #c2d9fc;
     border-radius: 100px;
     padding: 10px 24px;
-    height: 46px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    outline: none;
+    transition: opacity 250ms ease-in-out, background-color 250ms ease-in-out;
 }
 
 .hero-btn-learn {
+    display: block;
     border: 1px solid rgba(255, 255, 255, 0);
     background-color: rgba(13, 11, 10, 0.05);
     border-radius: 100px;
     padding: 10px 24px;
-    height: 46px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    outline: none;
     text-align: center;
+    transition: opacity 250ms ease-in-out, border 250ms ease-in-out, background-color 250ms ease-in-out; 
+}
+.hero-btn-join:hover,
+.hero-btn-learn:hover,
+.hero-btn-join:focus,
+.hero-btn-learn:focus {
+    opacity: 0.5;
+}
+.hero-btn-join:active {
+    opacity: 1;
+    background-color: transparent;
+}
+.hero-btn-learn:active {
+    border: 1px solid #868584;
+    opacity: 1;
+    background-color: transparent;
 }
 
 /* tablet */
@@ -81,12 +103,10 @@
         font-size: 18px;
     }
 
-    .hero-btn-block {
+    .hero-btn-list {
         flex-direction: row;
     }
-
-    .hero-btn-join,
-    .hero-btn-learn {
+    .hero-btn-list li {
         width: auto;
     }
 }
