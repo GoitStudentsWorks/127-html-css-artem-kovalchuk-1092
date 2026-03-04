@@ -92,6 +92,19 @@
   display: flex;
   justify-content: center;
 }
+.team-member-social {
+    transition: transform 250ms ease-in-out,
+    opacity 250ms ease-in-out;
+}
+  .team-member-social:hover,
+  .team-member-social:focus {
+    opacity: 0.5;
+    transform: scale(1.1);
+}
+  .team-member-social:active {
+    transform: scale(0.95);
+    opacity: 0.5;
+}
 /* region team Tablet  */
 @media screen and (min-width: 768px) {
   .team-section {
@@ -169,19 +182,6 @@
   .team-member-list {
     width: 421px;
     height: 204px;
-  }
-  .team-member-social {
-    transition: transform 250ms ease-in-out,
-    opacity 250ms ease-in-out;
-  }
-  .team-member-social:hover,
-  .team-member-social:focus {
-    opacity: 0.5;
-    transform: scale(1.1);
-  }
-  .team-member-social:active {
-    transform: scale(0.95);
-    opacity: 0.5;
   }
 }
 /* endregion team Desktop  */
