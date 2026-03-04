@@ -51,16 +51,8 @@ button {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 1336px) {
   .section {
     padding: 112px 0;
   }
 }
-=======
-@media screen and (min-width: 1440px) {
-    .section {
-        padding: 112px 0;
-    }
-}
->>>>>>> 5b285db (fix base team)
