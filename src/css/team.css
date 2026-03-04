@@ -153,6 +153,7 @@
     gap: 64px 24px;
   }
   .team-list-item {
+    border-radius: 16px;
     flex-basis: calc((100% - 48px) / 3);
     transition: box-shadow 250ms ease-in-out;
   }
@@ -170,15 +171,17 @@
     height: 204px;
   }
   .team-member-social {
-    transition: color 250ms ease-in-out;
+    transition: transform 250ms ease-in-out,
+    opacity 250ms ease-in-out;
   }
   .team-member-social:hover,
   .team-member-social:focus {
-    color: #0d0b0a;
+    opacity: 0.5;
     transform: scale(1.1);
   }
   .team-member-social:active {
     transform: scale(0.95);
+    opacity: 0.5;
   }
 }
 /* endregion team Desktop  */
