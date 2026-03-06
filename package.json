@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/project-TrueBalance/",
+    "build": "vite build --base=/127-html-css-artem-kovalchuk-1092/",
     "preview": "vite preview"
   },
   "devDependencies": {
